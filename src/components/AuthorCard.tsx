@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 export default function AuthorCard() {
   return (
@@ -7,9 +8,14 @@ export default function AuthorCard() {
 
 
 
-
-      <img className='w-16 h-16 rounded-full mr-4 object-cover border-2 border-red-500' src="/images/profile.jpeg"
-        alt="Author Image" />
+      <Image
+  className="w-16 h-16 rounded-full mr-4 object-cover border-2 border-red-500"
+  src="/images/profile.jpeg"
+  alt="Author Image"
+  width={64} // Set the width in pixels
+  height={64} // Set the height in pixels
+  priority // Optional: For faster loading of important images
+/>
       <div>
         <h3 className="text-xl font-mono text-violet-900 ">WARDAH</h3>
         <p className='text-slate-600'> STUDENT | WEB DEVELOPER | {""}

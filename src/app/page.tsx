@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import NavBar from "@/components/NavBar"
 import Blogcard from "@/components/BlogCard";
 import Feautures from "@/components/Feautures";
