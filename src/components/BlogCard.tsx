@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Blogcard() {
+const BlogCard = () => {
   return (
-    <div>
-      
-    </div>
+    <div>BlogCard</div>
   )
 }
+
+export default BlogCard

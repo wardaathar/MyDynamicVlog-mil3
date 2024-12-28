@@ -9,16 +9,16 @@ export default function AuthorCard() {
 
 
       <Image
-  className="w-16 h-16 rounded-full mr-4 object-cover border-2 border-red-500"
-  src="/images/profile.jpeg"
-  alt="Author Image"
-  width={64} // Set the width in pixels
-  height={64} // Set the height in pixels
+  className="w-20 h-20 rounded-full mr-6 object-cover border-2 border-red-500"
+  src="/images/profile.jpg"
+  alt=""
+  width={100} // Set the width in pixels
+  height={100} // Set the height in pixels
   priority // Optional: For faster loading of important images
 />
       <div>
         <h3 className="text-xl font-mono text-violet-900 ">WARDAH</h3>
-        <p className='text-slate-600'> STUDENT | WEB DEVELOPER | {""}
+        <p className='text-slate-600'> STUDENT | WEB DEVELOPER | MEHNDI ARTIST {""}
        </p>
       </div>
       </div>
@@ -29,11 +29,6 @@ export default function AuthorCard() {
     href="#"
     className='px-4 text-white- bg-blue-500 rounded-md hover:bg-slate-600 translate duration-300'>
    Facebook
-  </a>
-  <a
-    href="#"
-    className='px-4 text-white- bg-blue-500 rounded-md hover:bg-slate-600 translate duration-300'>
-   Github
   </a>
   <a
     href="#"
