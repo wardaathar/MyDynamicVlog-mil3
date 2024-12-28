@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 
 export default function Mega() {
-  const [posts, setPosts] = useState([
+  const [posts] = useState([
     {
       id: 1,
       title: "Dynamic Project",
@@ -71,12 +71,14 @@ export default function Mega() {
   ]);
 
   return (
-    <div  className="/blog" style={{ padding: "40px", fontFamily: "Arial, bold-sans-serif" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "60px", color: "black" }}>My Live Blog</h1>
+    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+      <h1 style={{ textAlign: "center", marginBottom: "60px", color: "black" }}>
+        My Live Blog
+      </h1>
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
           gap: "30px",
           justifyItems: "center",
         }}
@@ -94,9 +96,11 @@ export default function Mega() {
               maxWidth: "350px",
             }}
           >
-            <img
+            <Image
               src={post.image}
               alt={post.title}
+              width={350}
+              height={200}
               style={{
                 width: "100%",
                 height: "200px",
@@ -105,9 +109,15 @@ export default function Mega() {
               }}
             />
             <div style={{ padding: "15px" }}>
-              <h2 style={{ margin: "10px 0", fontSize: "1.2em", color: "#333" }}>{post.title}</h2>
-              <p style={{ fontSize: "0.9em", color: "#777", margin: "5px 0" }}>{post.date}</p>
-              <p style={{ fontSize: "1em", color: "#555", margin: "15px 0" }}>{post.content}</p>
+              <h2 style={{ margin: "10px 0", fontSize: "1.2em", color: "#333" }}>
+                {post.title}
+              </h2>
+              <p style={{ fontSize: "0.9em", color: "#777", margin: "5px 0" }}>
+                {post.date}
+              </p>
+              <p style={{ fontSize: "1em", color: "#555", margin: "15px 0" }}>
+                {post.content}
+              </p>
               <a
                 href={post.link}
                 target="_blank"
