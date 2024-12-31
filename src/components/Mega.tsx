@@ -24,7 +24,7 @@ export default function Mega() {
       id: 3,
       title: "Responsive Design",
       content: "A fully responsive website using HTML and CSS.",
-      image: "/htmlcss.PNG",
+      image: "/html.PNG",
       date: "15 Dec, 2024",
       link: "https://responsive-website-using-html-css-xi.vercel.app",
     },
