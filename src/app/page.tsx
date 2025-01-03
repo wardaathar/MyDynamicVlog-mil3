@@ -9,6 +9,7 @@ export default function Home(){
     <div>
     <Authorcard/>
      <Mega/>
+  
      <Footer/>
      </div>
   );

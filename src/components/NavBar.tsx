@@ -66,7 +66,7 @@ export default function NavBar() {
         </nav>
         <button
   className="inline-flex items-center bg-blue-700 border-0 py-1 px-3 focus:outline-none hover:bg-slate-500 rounded text-white mt-4 md:mt-0 transition-colors duration-300"
-  onClick={() => window.open('https://www.linkedin.com/in/warda-athar-493a96274', '_blank')}
+  onClick={() => window.open('https://www.linkedin.com/in/s-warda-a-2ab623344', '_blank')}
 >
   LinkedIn
   <svg
