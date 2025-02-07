@@ -71,66 +71,34 @@ export default function Mega() {
   ]);
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "60px", color: "black" }}>
-        My Live Blog
+    <div className="px-6 py-12 font-sans bg-gray-100">
+      <h1 className="text-center text-3xl font-bold mb-10 text-gray-800">
+        My Live Projects
       </h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "30px",
-          justifyItems: "center",
-        }}
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {posts.map((post) => (
           <div
             key={post.id}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "10px",
-              backgroundColor: "#fff",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              overflow: "hidden",
-              width: "100%",
-              maxWidth: "350px",
-            }}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
           >
             <Image
               src={post.image}
               alt={post.title}
               width={350}
               height={200}
-              style={{
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                borderBottom: "1px solid #ddd",
-              }}
+              className="w-full h-48 object-cover"
             />
-            <div style={{ padding: "15px" }}>
-              <h2 style={{ margin: "10px 0", fontSize: "1.2em", color: "#333" }}>
+            <div className="p-4">
+              <h2 className="text-lg font-semibold text-gray-700">
                 {post.title}
               </h2>
-              <p style={{ fontSize: "0.9em", color: "#777", margin: "5px 0" }}>
-                {post.date}
-              </p>
-              <p style={{ fontSize: "1em", color: "#555", margin: "15px 0" }}>
-                {post.content}
-              </p>
+              <p className="text-sm text-gray-500 mb-2">{post.date}</p>
+              <p className="text-gray-600 mb-4">{post.content}</p>
               <a
                 href={post.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  padding: "10px 20px",
-                  backgroundColor: "#0070f3",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "5px",
-                  fontWeight: "bold",
-                  display: "inline-block",
-                }}
+                className="bg-blue-600 text-white px-4 py-2 rounded-md font-bold inline-block hover:bg-blue-700 transition"
               >
                 View Online
               </a>

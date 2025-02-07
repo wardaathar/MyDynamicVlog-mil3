@@ -1,16 +1,16 @@
-import React from "react";
-import Mega from "@/components/Mega";
-import Authorcard from "@/components/AuthorCard";
-import Footer from "@/components/Footer";
+import React from 'react';
+import Blog from "../app/blog/page"
+import Mega from '@/components/Mega';
+import Footer from '@/components/Footer';
 
-
-export default function Home(){
+function page() {
   return (
     <div>
-    <Authorcard/>
-     <Mega/>
-  
-     <Footer/>
-     </div>
-  );
+      <Blog/>
+      <Mega/>
+      <Footer/>
+    </div>
+  )
 }
+
+export default page
